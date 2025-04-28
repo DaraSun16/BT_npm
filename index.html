@@ -22,16 +22,45 @@
     </div>
   </div>
 
-  <div class="nav container-fluid border border-dark bg-light text-dark justify-content-space-between">
-    <div class="row">
-      <div class="col-lg-5 col-md-5 col-sm-5">1</div>
-      <div class="col-lg-5 col-md-5 col-sm-5">1</div>
-      <div class="col-lg-5 col-md-5 col-sm-5">1</div>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Accueil</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nos jeux</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              A propos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Actualités</a></li>
+              <li><a class="dropdown-item" href="#">Contact</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Gallery</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-  </div>
+  </nav>
 
 <div class="container-fluid text-light">
-  <div class="main container-fluid border my-5 mx-3">
+  <div class="main container-fluid border mt-5 mb-2 p-3">
     <div class="row align-items-start bg-light text-dark">
       <div class="col">
         <h2>Des histoires qui résonnent au-delà du temps</h2></div>
@@ -46,32 +75,79 @@
     </div>
   </div>
 
-  <div class="section container row justify-content-center">
-    <div class="card my-2" style="width: 20rem;">
-      <img src="assets/img/FFX.jpg" class="card-img-top" alt="">
+  <div class="section container row justify-content-center col-20 mx-auto">
+    <div class="card mx-3 mb-5 bg-dark text-light" style="width: 20rem;">
+      <img src="assets/img/FFX.jpg" class="card-body" alt="FFX">
       <div class="card-body">
         <h5 class="card-title">Final Fantasy X</h5>
         <p class="card-text">Un voyage inoubliable entre espoir, destin et sacrifice..</p>
-        <a href="#" class="btn btn-secondary">Page officiel</a>
+        <a href="#" class="btn btn-light">Page officiel</a>
       </div>
     </div>
-    <div class="card mx-3 my-2" style="width: 20rem;">
-      <img src="assets/img/KH.jpg" class="card-img-top" alt="">
+    <div class="card mx-3 mb-5 bg-dark text-light" style="width: 20rem;">
+      <img src="assets/img/KH.jpg" class="card-body" alt="KH">
       <div class="card-body">
         <h5 class="card-title">Kingdom Hearts</h5>
         <p class="card-text">Quand les liens du cœur transcendent les mondes.</p>
-        <a href="#" class="btn btn-secondary">Page officiel</a>
+        <a href="#" class="btn btn-light">Page officiel</a>
       </div>
     </div>
-    <div class="card mx-3 my-2" style="width: 20rem;">
-      <img src="assets/img/P5.jpg" class="card-img-top" alt="">
+    <div class="card mx-3 mb-5 bg-dark text-light" style="width: 20rem;">
+      <img src="assets/img/P5.jpg" class="card-body" alt="P5">
       <div class="card-body">
         <h5 class="card-title">Persona 5</h5>
         <p class="card-text">Incarnez un justicier masqué et libérez les cœurs oppressés.</p>
-        <a href="#" class="btn btn-secondary">Page officiel</a>
+        <a href="#" class="btn btn-light">Page officiel</a>
       </div>
     </div>
   </div>
+  </div>
+
+  <div class="table-responsive-md container-fluid mt-5">
+    <h2 class="text-center">Horaires d'ouverture de l'entreprise</h2>
+    <p class="text-center">Nous sommes ouverts du lundi au vendredi de 8h à 12h et de 14h à 17h. Sous Rendez-vous</p>
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr class="table-dark">
+          <th scope="col">Lundi</th>
+          <th scope="col">Mardi</th>
+          <th scope="col">Mecredi</th>
+          <th scope="col">Jeudi</th>
+          <th scope="col">Vendredi</th>
+          <th scope="col">Samedi</th>
+          <th scope="col">Dimanche</th>
+        </tr>
+      </thead>
+      <tbody class="table-light">
+        <tr>
+          <td>Ouvert</td>
+          <td>Ouvert</td>
+          <td>Ouvert</td>
+          <td>Ouvert</td>
+          <td>Ouvert</td>
+          <td>Fermé</td>
+          <td>Fermé</td>
+        </tr>
+      </tbody>
+      <tr class="table-light">
+        <td>8-12</td>
+        <td>8-12</td>
+        <td>8-12</td>
+        <td>8-12</td>
+        <td>8-12</td>
+        <td>Fermé</td>
+        <td>Fermé</td>
+      </tr>
+      <tr class="table-light">
+        <td>14-17</td>
+        <td>14-17</td>
+        <td>Fermé</td>
+        <td>14-17</td>
+        <td>14-17</td>
+        <td>Fermé</td>
+        <td>Fermé</td>
+      </tr>
+    </table>
   </div>
 
   <div class="footer container-fluid border border-2 border-dark bg-light text-dark">
@@ -79,9 +155,16 @@
       <div class="col-12">
         <div class="text-center">&copy Dara. Tous droits réservés</div>
         <div class="text-center">Mentions légales</div>
+        <div class="text-center">日本、〒060-0052 北海道札幌市中央区南２条東３丁目１０−１０−２６</div>
+        <div class="footer-icons text-center">
+          <a href="" target="_blank"><i class="fa-brands fa-x-twitter twitter_link"></i></a>
+          <a href="" target="_blank"><i class="fa-brands fa-instagram insta_link"></i></a>
+          <a href="" target="_blank"><i class="fa-brands fa-discord discord_link"></i></a>
+        </div>
       </div>
     </div>
 
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="https://kit.fontawesome.com/951c171f9f.js" crossorigin="anonymous"></script>
 </body>
 </html>
